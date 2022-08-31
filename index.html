@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap'>
+<link rel="stylesheet" href="style.css">
+<script  src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <div class="app-container" id="contain" data-theme="light">
+    <div class="app-top-bar">
+      <button class="button button-small">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <h1 class="app-heading">Weather App</h1>
+      <button class="button button-small" id="toogler">
+        <i class="fas fa-light fa-moon" id="toogler-icon"></i>
+      </button>
+    </div>
+    <div class="app-content">
+      <button class="button button-block">
+        <span class="subtle">Period</span> <span>Today</span> <div class="button button-small"><i class="fas fa-chevron-right"></i></div>
+      </button>
+      <div class="button button-dial">
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <span class="button-dial-spoke"></span>
+        <div class="button-dial-top"></div>
+        <div class="button-dial-label">
+          <i class="fas fa-light fa-temperature-half"></i>
+          27&deg;C
+        </div>
+      </div>
+      <div class="flex-button-container">
+        <button class="button button-large">
+          <i class="fas fa-light fa-cloud-rain fa-2xl" style="color: #1885ffe3;"></i>
+          13%
+        </button>
+        <button class="button button-large">
+          <i class="fas fa-light fa-wind fa-2xl" style="color: #0f345fe3;" id="wind"></i>
+          6 Km/h
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
